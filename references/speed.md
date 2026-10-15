@@ -22,6 +22,8 @@ The author skips *explaining* Speed because readers already know it, not because
 | Remove human handoffs | A standing outcome or durable workflow means the model doesn't wait to be re-briefed "task after task". | #8, #21, re-tagged Speed |
 | Timebox | Put a tight deadline in the plan for the human, and an iteration budget in the model's instruction. | #58 (Collison's "Fast" list); model reading is a proposal (O7) |
 
+Like every escalation, each Speed move names the goal it serves and its judge (G1). Example: `Timebox: reply requested before 17:00. Goal served: rung 2 (a firm date today). Judge (c): a dated reply received before 17:00.`
+
 ## When it applies
 
 Always, as the final pass. It runs standalone only when Alexis explicitly asks for "faster".

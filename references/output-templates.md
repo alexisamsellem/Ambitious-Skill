@@ -19,11 +19,21 @@ Applied | Dropped: <one-line reason>
 - <move> (#n). Goal served: <rung>. Judge (<a–e>): <judge + pass condition>.
 
 ## Depth                                  | ## Profondeur
-...
+Applied | Dropped: <one-line reason>
+- <move> (#n). Goal served: <rung>. Judge (<a–e>): <judge + pass condition>.
+
 ## Range                                  | ## Étendue
-...
+Applied | Dropped: <one-line reason>
+- <field → method> (#n). Goal served: <rung>. Judge (<a–e>): <judge + pass condition>.
+
 ## Speed                                  | ## Vitesse
-...
+Applied | Dropped: <one-line reason>
+- <move> (#n or "proposal"). Goal served: <rung>. Judge (<a–e>): <judge + pass condition>.
+```
+
+Every move in every dimension carries both `Goal served:` and `Judge (x):`, Speed included. A move without them fails G1: rewrite it or drop it (S6).
+
+```
 
 ## Access to unlock                       | ## Accès à débloquer
 - <missing>: enables <escalation>. How: <route>. Effort: <time>.
