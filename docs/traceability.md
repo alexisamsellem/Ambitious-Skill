@@ -28,7 +28,7 @@ Section references (§, S, G) point to `docs/spec.md`; file names point to `SKIL
 | 12 | Design a better mechanism | Altitude | Impl | §7.1 · `references/altitude.md` |
 | 13 | Prove it on your own history | Altitude (judge) | Impl | §7.1, §7.4, judge (b) · `altitude.md`, `judges.md` |
 | 14 | Run it beside the current process | Altitude | Impl+P | §7.1, §7.4 (backtest first), judge (c) · `altitude.md`, `speed.md` |
-| 15 | Escalate step by step | Altitude | Impl+P | §5 S2: the ladder is internal; output = top rung, fallback = the rung below (R2.4) · `altitude.md` |
+| 15 | Escalate step by step | Altitude | Impl+P | §5 S2 + S7: full ladder shown; plan = highest provable-now rung, higher rungs gated by evidence (R2.4 as amended 2026-10-16, G14) · `SKILL.md`, `altitude.md`, `output-templates.md` |
 | 16 | Applies when there is an end outcome | Caveat | Impl | §7.1 "Applies when" · `altitude.md` |
 | 17 | Less suited to creative work | Caveat | Impl | §7.1 "Weak or dropped", eval 10 · `altitude.md` |
 | 18 | Meetings are the tell-tale sign | Caveat | Impl | §7.1 "Applies when" · `altitude.md` |

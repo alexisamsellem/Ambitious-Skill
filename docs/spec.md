@@ -19,7 +19,7 @@ Every rule carries one label:
 
 You run `/ambitious` on a prompt, a skill, or a multi-folder agent. The skill returns that target pushed to its most ambitious *checkable* version across the article's four dimensions: **Speed, Altitude, Depth, Range** [ARTICLE #1, #2]. "Checkable" means every escalation names the goal it serves and the outside judge that would show it worked [PROPOSAL, accepted R3.2, built on ARTICLE #34, #42].
 
-The default output is the **most ambitious version plus one fallback line** [PROPOSAL, accepted R3.2; ARTICLE #61]. The skill proposes. It writes files only on `apply` and executes only on `run it` [PROPOSAL, accepted R2.1].
+The output is the **full ladder**. The **plan** is everything up to the highest rung that can be proven now; higher rungs are **gated next steps**, each unlocked by evidence the plan produces. One fallback line goes under the plan [PROPOSAL, accepted R3.2, amended 2026-10-16 (B); ARTICLE #61]. The skill proposes. It writes files only on `apply` and executes only on `run it` [PROPOSAL, accepted R2.1].
 
 ### Non-goals
 
@@ -43,7 +43,7 @@ The default output is the **most ambitious version plus one fallback line** [PRO
 | R1.5 / R3.1 | Invocation only (`/ambitious`, no trigger phrases). The same applies to `agent-prompt-reviewer`; that change is your action, outside this repo. |
 | R2.2 | Overlap with `agent-prompt-reviewer` is accepted. Both run in parallel; the replacement decision comes after the evals. |
 | R2.3 | **All four dimensions are applied every time.** A dimension may be dropped only with a one-line justification. There is no maximum number of dimensions. |
-| R2.4 / R3.2 | Maximum ambition by default. The only brake: each escalation names a goal and an outside judge. One fallback line. |
+| R2.4 / R3.2 | Maximum ambition by default. The only brake: each escalation names a goal and an outside judge. One fallback line. **Amended 2026-10-16 (Alexis chose "B" after eval case 8):** the full ladder is still shown, but the plan stops at the highest rung that can be proven now; higher rungs are gated next steps unlocked by evidence (G14). |
 | R3.3 | Judge hierarchy: (a) a runnable tool with immediate feedback, (b) held-out data or a backtest, (c) a real-world signal or shadow run, (d) a named human expert, (e) a separate model instance labelled "weak judge". The model's self-review never counts. |
 | R3.4 | Missing access: write the version that assumes the access, plus an "access to unlock" list. A reduced run happens only on request and is labelled as reduced. |
 | R3.5 | The reply is in the language of the request. The artifact keeps its own language. SKILL.md is written in English. |
@@ -395,7 +395,7 @@ description: "EXPLICIT-INVOCATION ONLY: run only when Alexis types /ambitious. P
 | 12 | Design a better mechanism | Altitude | Impl | §7.1 · `references/altitude.md` |
 | 13 | Prove it on your own history | Altitude (judge) | Impl | §7.1, §7.4, judge (b) · `altitude.md`, `judges.md` |
 | 14 | Run it beside the current process | Altitude | Impl+P | §7.1, §7.4 (backtest first), judge (c) · `altitude.md`, `speed.md` |
-| 15 | Escalate step by step | Altitude | Impl+P | §5 S2: the ladder is internal; output = top rung, fallback = the rung below (R2.4) · `altitude.md` |
+| 15 | Escalate step by step | Altitude | Impl+P | §5 S2 + S7: full ladder shown; plan = highest provable-now rung, higher rungs gated by evidence (R2.4 as amended 2026-10-16, G14) · `SKILL.md`, `altitude.md`, `output-templates.md` |
 | 16 | Applies when there is an end outcome | Caveat | Impl | §7.1 "Applies when" · `altitude.md` |
 | 17 | Less suited to creative work | Caveat | Impl | §7.1 "Weak or dropped", eval 10 · `altitude.md` |
 | 18 | Meetings are the tell-tale sign | Caveat | Impl | §7.1 "Applies when" · `altitude.md` |

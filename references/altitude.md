@@ -26,7 +26,7 @@
 3. "Work out which three decisions are most urgent… with for/against arguments."
 4. "Design a better way [to catch problems early] than a quarterly deck, show from our own history that it would have caught things sooner, and run it beside the current one for a quarter."
 
-The output keeps the top viable rung. The rung below becomes the fallback line (G11).
+The plan goes up to the highest rung that can be proven now. In this example that is rung 4's backtest on history, a judge at level (b). "Run it beside the current one for a quarter" becomes a gated next step, unlocked by a passed backtest (G14). The rung below the plan becomes the fallback line (G11).
 
 ## When it applies
 
