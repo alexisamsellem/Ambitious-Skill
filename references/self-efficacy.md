@@ -10,6 +10,7 @@ S5 takes each candidate escalation and gives it an explicit target that a judge 
 |---|---|---|---|
 | Specific, hard goals | Replace "improve", "do your best", "make it better" with a number or a pass/fail condition. Locke and Latham: "specific hard goals perform better than … simply told to try their best". | #57 | article (human); model use is a proposal |
 | An order of magnitude beyond | "Ask for 200ms" when 5s was asked. | #27 | article |
+| Possible on this input | Before the number goes in, run one cheap measurement of the real input (file sizes, compressibility, base rates, sample size) and check the target against the physical bound. If the target is impossible, write "best achievable" and state the bound. Ambition is aimed at what can be reached, not at a wall. | — | proposal, from eval case 3 (2026-10-16) |
 | Stated as solvable | Write: "This is very much solvable; keep going until <judge> passes." Dantzig solved two open problems believing they were homework. | #28, #59 | article |
 | Tight deadline | Give Alexis a deadline in the plan, and the model a timebox or iteration budget in its instruction. Source: Collison's "Fast" list, "audacious goals and tight deadlines". | #58 | article (human); model reading is a proposal (O7) |
 | Someone already did it | Cite a precedent only if verified now, with its source (G7). Never invent one, and don't reuse the article's own hedged anecdotes as proof (#6). | #60 | article + G7 proposal (accepted) |

@@ -24,6 +24,10 @@ Pick the judge that measures the goal the escalation serves, then take the highe
 - Analysis: the goal is a true, decision-relevant cause, so held-out prediction or a planted-truth test (b) measures it; "the notebook runs" is a constraint.
 - If no judge can measure the goal itself, say so in the brief, and don't present a proxy as proof.
 
+## A backtest must not see what it tests
+
+The tuning window (where thresholds, weights or features are chosen) ends **before the earliest sign** of the event the backtest must catch, leading signals included, not just before the event itself. Write both dates in the judge, and check them against the data before the brief goes out. *Why: case 1 (2026-10-16), where thresholds "fixed before April 2025" were tuned on the January to March ticket spike they were meant to detect.*
+
 ## Never a judge
 
 - Your own review of your own output, in the same context (G4).

@@ -20,3 +20,6 @@ Run on every `/ambitious` output. A case passes layer 1 only if every applicable
 | C14 | Deeper, not bigger: the number of deliverables doesn't grow unless a stated higher goal requires it | Count deliverables (a) vs (b) | G2 |
 | C15 | Each judge measures the goal it is attached to; tool checks on proxies (length, facts, "script passes") appear only as constraints | For each judge, ask "does passing it show the goal was met?" | G1, `judges.md` |
 | C16 | No standing mechanism is in the plan without shown value: each one is a gated next step with an "Unlock when" condition, and the plan produces that evidence | Read the plan and the "Gated next steps" section | G14 |
+| C17 | Every numeric target was checked against the real input before it went into the brief | The brief or prompt names the measurement behind each number, or says "best achievable" with the bound | S5, `self-efficacy.md` |
+| C18 | A backtest's tuning window ends before the earliest sign of the tested event | Both dates appear in the judge, and the tuning end is earlier than the first leading signal | `judges.md` |
+| C19 | The output asks for a reader part at plain-answer length and a re-runnable proof pack; claims are worded at the strength of their evidence | Read the artifact's output spec; look for "chance", "rules out", "proves" in the run's output | G2, G15, G16 |
