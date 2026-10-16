@@ -16,6 +16,14 @@ Every escalation names one judge (G1). Prefer the highest level that can be reac
 | **d** | A named human expert | Alexis's blind ranking; a named analyst or editor | — |
 | **e** | A separate model instance that never sees the producing reasoning | a fresh subagent given only the output and the criteria. **Always labelled "weak judge".** | — |
 
+## The judge measures the goal, not a proxy
+
+Pick the judge that measures the goal the escalation serves, then take the highest level available *for that goal*. A proxy that is easy to check (word count, factual accuracy, schema validity, script passes) is a **constraint**: it guards against errors, but it is never the target.
+
+- Creative work: the goal is what a reader values, so the top judge is a reader (d), usually a blind ranking. Tool checks (length, facts, clichés) are listed as constraints only. *Why: case 10 (2026-10-15), where a story that passed 6 tool checks lost to the raw version.*
+- Analysis: the goal is a true, decision-relevant cause, so held-out prediction or a planted-truth test (b) measures it; "the notebook runs" is a constraint.
+- If no judge can measure the goal itself, say so in the brief, and don't present a proxy as proof.
+
 ## Never a judge
 
 - Your own review of your own output, in the same context (G4).

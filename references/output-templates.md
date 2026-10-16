@@ -35,6 +35,10 @@ Every move in every dimension carries both `Goal served:` and `Judge (x):`, Spee
 
 ```
 
+## Gated next steps                      | ## Étapes suivantes (à débloquer)
+- <rung / escalation>: adds <what>. Unlock when: <evidence from the plan's judge, with threshold>. Then: <what changes in the artifact>.
+(or "None: the whole ladder is provable now.")
+
 ## Access to unlock                       | ## Accès à débloquer
 - <missing>: enables <escalation>. How: <route>. Effort: <time>.
 (or "None: everything assumed is reachable.")
