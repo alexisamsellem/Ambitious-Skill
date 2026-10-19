@@ -7,6 +7,10 @@ The **ambition brief** comes first, for every input type. Write it in the langua
 ```
 # Ambition brief: <target name>          | # Note d'ambition : <nom de la cible>
 
+## Breaks found (B and C)               | ## Ce qui casse aujourd'hui (B et C)
+- <break>: shown by <command + output line, or file:line>. Fix: <first item of the plan>.
+(or "None found: <which checks ran>.")
+
 ## Goal ladder                            | ## Échelle d'objectifs
 1. Stated: <what was asked>
 2. Beyond: <what that serves>

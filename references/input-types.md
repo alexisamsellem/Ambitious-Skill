@@ -27,6 +27,17 @@ skill-b/SKILL.md     narrative                tables                   memo     
 
 The last column records which dimension each component carries today. S7 reuses the map to show where each dimension *should* live.
 
+### Health check (B and C, G17)
+
+Before S2, find what is broken today. A top professional fixes that first.
+
+1. Copy the target to a scratch folder. Never run anything in the original.
+2. Run its own checks: test suites, linters, its scripts on its own worked examples. A worked example that fails its own rules is a break.
+3. Trace the main path, then each failure branch: a stopped run and its resume, bad or partial input, a missing tool or access, an ambiguous match, an unknown verdict.
+4. List each break with its evidence (the command and the output line, or the file and line).
+
+These breaks open the brief and come first in the plan and the diff. Each code fix is run against at least one adversarial example (an input built to make it fail) before it goes in the diff.
+
 ## Artifacts (S7)
 
 | Type | Artifact |
@@ -36,7 +47,7 @@ The last column records which dimension each component carries today. S7 reuses 
 | C | (1) The component map, current vs proposed. (2) A ranked change list, one row per file: what changes, which dimension, the goal served, the judge. Rank by expected impact on the top goal of the ladder. (3) Unified diffs for the top 3 changes only. |
 
 Rules that hold for every artifact:
-- The ambition brief comes first (`output-templates.md`).
+- The ambition brief comes first (`output-templates.md`). For B and C, it opens with the health-check breaks.
 - Every change in the artifact traces to an escalation in the brief. Nothing else changes: no drive-by rewrites or style edits.
 
 ## Modes (S8)

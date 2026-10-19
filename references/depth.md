@@ -42,6 +42,8 @@ Drop it when no checkable material and no judge can exist, even with more access
 
 *Proposal, open: not from the article.*
 
+- Make it work first (G17): run the health check (`input-types.md`) and fix what it finds before any other Depth move.
+
 - Replace the skill's method with the professional's method, not just its vocabulary. If the skill says "analyse like an expert", replace that with the named method.
 - Give the skill an embedded, runnable judge: a script, a test, held-out examples, a verifier step.
 - Point its read path at raw sources instead of digested exports.
