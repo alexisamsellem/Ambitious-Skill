@@ -7,6 +7,10 @@ The **ambition brief** comes first, for every input type. Write it in the langua
 ```
 # Ambition brief: <target name>          | # Note d'ambition : <nom de la cible>
 
+## Breaks found (B and C)               | ## Ce qui casse aujourd'hui (B et C)
+- <break>: shown by <command + output line, or file:line>. Fix: <first item of the plan>.
+(or "None found: <which checks ran>.")
+
 ## Goal ladder                            | ## Échelle d'objectifs
 1. Stated: <what was asked>
 2. Beyond: <what that serves>
@@ -48,6 +52,13 @@ FALLBACK: if <ambitious version> doesn't reach <target> by <timebox>, keep <rung
 ```
 
 Then the artifact for the input type (`input-types.md`).
+
+## What the artifact asks for (G2, G16)
+
+When the artifact makes something run (a rewritten prompt, a skill, an agent), it asks for the output in two parts:
+
+1. **For the reader:** the answer, at the length a plain answer would have. Decision first, no method narrative.
+2. **Proof pack:** the scripts, data cuts and reports every judge needs, next to the answer, plus one command that re-runs them all. A judge result with no re-runnable proof is reported as NOT JUDGEABLE.
 
 ## One-line drop reasons (G9)
 

@@ -26,6 +26,7 @@
 - **Keep going (#28).** "Does something seem impossible to the model? Reiterate that it's very much solvable, it just needs to keep going." Write that into the rewritten artifact.
 - **Challenge what you know (#29, #30).** Get raw data and test the belief adversarially: "We believe churn is an onboarding problem. Try to reproduce that from the raw data."
 - **Produce new knowledge (#31–#33).** Once deep in the data, look for blind spots: "Build a simulation of our customers that reproduces the last year from our logs. Then find the earliest signal of churn we don't know about yet, and show it predicts on data it has not seen."
+- **Claims at the strength of the evidence (G15).** A deep method produces more claims, so it needs stricter wording. A test that fails to reject is "not shown", not "chance". A stable aggregate doesn't rule out a cause at the level below. Each claim says what was tested and what wasn't. *Proposal, from eval case 1 (2026-10-16).*
 - **Outside judge (#34, #35).** "Do not ask the model to judge itself." Ideally use "a tool the model can run to get feedback immediately". See `judges.md`.
 - **A mix, not a checklist (#37).** "I've found a mix of the following techniques useful."
 
@@ -40,6 +41,8 @@ Drop it when no checkable material and no judge can exist, even with more access
 ## For skill and agent inputs
 
 *Proposal, open: not from the article.*
+
+- Make it work first (G17): run the health check (`input-types.md`) and fix what it finds before any other Depth move.
 
 - Replace the skill's method with the professional's method, not just its vocabulary. If the skill says "analyse like an expert", replace that with the named method.
 - Give the skill an embedded, runnable judge: a script, a test, held-out examples, a verifier step.
