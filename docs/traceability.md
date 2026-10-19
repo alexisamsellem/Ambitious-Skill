@@ -86,3 +86,4 @@ Section references (§, S, G) point to `docs/spec.md`; file names point to `SKIL
 
 **Correction to Phase 1.** I wrote "57 actionable and 8 not", and later "58 and 8". Both counts were wrong: only 5 items were marked non-actionable (#5, #6, #54, #64, #65). #4 was "partly actionable" in Phase 1. It is excluded here, with its reason given in the matrix.
 
+**v2 note (2026-10-19).** The guardrail IDs G1–G14 keep their numbers. G15 (claims at evidence strength) and G16 (proof ships) are merged into G14; G17 (health check) became S1 "look first". The step numbers moved: the old S5 (frame targets) and S6 (filter) are now S5 (check each move); the old S7/S8 are now S6/S7. Rows that cite S7 or S8 refer to the v1 numbering.

@@ -1,59 +1,43 @@
-# Output templates (S7)
+# Output templates (S6)
 
 The **ambition brief** comes first, for every input type. Write it in the language of Alexis's request. Use the English or French headings below to match.
 
 ## Ambition brief
 
+The brief is short: **400 words at most**, before the artifact. The article's own escalations are one-sentence asks; the brief keeps that form.
+
 ```
 # Ambition brief: <target name>          | # Note d'ambition : <nom de la cible>
 
-## Breaks found (B and C)               | ## Ce qui casse aujourd'hui (B et C)
-- <break>: shown by <command + output line, or file:line>. Fix: <first item of the plan>.
+## What breaks today (B and C)           | ## Ce qui casse aujourd'hui (B et C)
+- <break>: shown by <command + output line, or file:line>.
 (or "None found: <which checks ran>.")
 
-## Goal ladder                            | ## Échelle d'objectifs
-1. Stated: <what was asked>
-2. Beyond: <what that serves>
-3. Beyond: <highest viable rung>  ← target
-Purpose of the artifact: <the job it does>
-Verbs: <verb phrase>
+## The ladder                             | ## L'échelle
+Purpose: <the job the artifact does>. Verbs: <verb phrase>.
+1. <the ask as stated>
+2. <one rung higher, as a one-sentence ask>
+3. <one rung higher>                     ← plan stops here (judge runs now)
+4. <one rung higher>                     gated: unlock when <evidence + threshold>
 
-## Altitude                               | ## Altitude
-Applied | Dropped: <one-line reason>
-- <move> (#n). Goal served: <rung>. Judge (<a–e>): <judge + pass condition>.
-
-## Depth                                  | ## Profondeur
-Applied | Dropped: <one-line reason>
-- <move> (#n). Goal served: <rung>. Judge (<a–e>): <judge + pass condition>.
-
-## Range                                  | ## Étendue
-Applied | Dropped: <one-line reason>
-- <field → method> (#n). Goal served: <rung>. Judge (<a–e>): <judge + pass condition>.
-
-## Speed                                  | ## Vitesse
-Applied | Dropped: <one-line reason>
-- <move> (#n or "proposal"). Goal served: <rung>. Judge (<a–e>): <judge + pass condition>.
-```
-
-Every move in every dimension carries both `Goal served:` and `Judge (x):`, Speed included. A move without them fails G1: rewrite it or drop it (S6).
-
-```
-
-## Gated next steps                      | ## Étapes suivantes (à débloquer)
-- <rung / escalation>: adds <what>. Unlock when: <evidence from the plan's judge, with threshold>. Then: <what changes in the artifact>.
-(or "None: the whole ladder is provable now.")
+## Moves                                  | ## Mouvements
+- Altitude: replace <X> with <Y>. Goal: <rung>. Judge (<a–e>): <pass condition>.
+- Depth: replace <X> with <Y>. Goal: <rung>. Judge (<a–e>): <pass condition>.
+- Range: <field> → replace <X> with <method>. Goal: <rung>. Judge (<a–e>): <pass condition>.
+- Speed: replace <wait> with <loop>. Goal: <rung>. Judge (<a–e>): <pass condition>.
+(A dimension may read "Dropped: <one-line reason>". An addition reads "Add <Y> (replaces nothing): needed because <rung> cannot be reached without it".)
 
 ## Access to unlock                       | ## Accès à débloquer
-- <missing>: enables <escalation>. How: <route>. Effort: <time>.
-(or "None: everything assumed is reachable.")
+- <missing>: enables <move>. How: <route>. Effort: <time>.
 
-## Fallback                               | ## Repli
-FALLBACK: if <ambitious version> doesn't reach <target> by <timebox>, keep <rung below>, which still <serves goal>.
+FALLBACK: if <plan> doesn't reach <target> by <timebox>, keep <rung below>, which still <serves goal>.
 ```
 
-Then the artifact for the input type (`input-types.md`).
+For B and C, the breaks come first in the plan, as the first replacements.
 
-## What the artifact asks for (G2, G16)
+Then the artifact for the input type (`input-types.md`). For B, the diff changes the core step; a diff that grows the target by more than a fifth must name the rung that needs the extra size.
+
+## What the artifact asks for (G2, G14)
 
 When the artifact makes something run (a rewritten prompt, a skill, an agent), it asks for the output in two parts:
 

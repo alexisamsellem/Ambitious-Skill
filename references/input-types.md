@@ -1,6 +1,6 @@
 # Input types, reading, artifacts and modes
 
-Used at S0 (detect), S1 (read), S7 (assemble) and S8 (act).
+Used at S0 (detect), S1 (read), S6 (assemble) and S7 (act).
 
 ## Detect the type (S0)
 
@@ -25,9 +25,9 @@ skill-a/SKILL.md     data pull                GA4 export               tables   
 skill-b/SKILL.md     narrative                tables                   memo                Depth (vocabulary only)
 ```
 
-The last column records which dimension each component carries today. S7 reuses the map to show where each dimension *should* live.
+The last column records which dimension each component carries today. S6 reuses the map to show where each dimension *should* live.
 
-### Health check (B and C, G17)
+### Look first (B and C, S1)
 
 Before S2, find what is broken today. A top professional fixes that first.
 
@@ -38,7 +38,7 @@ Before S2, find what is broken today. A top professional fixes that first.
 
 These breaks open the brief and come first in the plan and the diff. Each code fix is run against at least one adversarial example (an input built to make it fail) before it goes in the diff.
 
-## Artifacts (S7)
+## Artifacts (S6)
 
 | Type | Artifact |
 |---|---|
@@ -50,7 +50,7 @@ Rules that hold for every artifact:
 - The ambition brief comes first (`output-templates.md`). For B and C, it opens with the health-check breaks.
 - Every change in the artifact traces to an escalation in the brief. Nothing else changes: no drive-by rewrites or style edits.
 
-## Modes (S8)
+## Modes (S7)
 
 | Mode | A. Prompt | B. Skill | C. Agent |
 |---|---|---|---|

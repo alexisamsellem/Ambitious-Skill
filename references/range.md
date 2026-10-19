@@ -35,7 +35,6 @@ When the verbs lead back only to the target's own field. One-line reason, naming
 
 ## For skill and agent inputs
 
-*Proposal, open: not from the article.*
+*Proposal, rewritten in v2 (2026-10-19).*
 
-- Each borrowed field becomes a step or a subagent with its own method and output.
-- The red team becomes a mandatory adversarial step before delivery. It gets the output only, not the reasoning that produced it.
+Keep the borrowed method that changes the skill's core step, and put it *inside* that step. A borrowed field does not become a new step or a new subagent unless the core step cannot use the method otherwise. The red team's method (find the three claims most likely to be wrong, trace each to its source) belongs in the skill's existing check, not in an extra layer.

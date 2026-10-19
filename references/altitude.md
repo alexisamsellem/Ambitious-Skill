@@ -5,7 +5,7 @@
 **Receives** the goal ladder, the artifact's purpose and the access lists (S2, S3).
 **Produces** the target outcome. It may be a standing state or a mechanism rather than a one-off deliverable. Depth then works on how to reach it.
 
-## Moves (pick the relevant ones, G10)
+## Moves (pick the one that matters, G10)
 
 | Move | What to do | `#` |
 |---|---|---|
@@ -40,8 +40,16 @@ The plan goes up to the highest rung that can be proven now. In this example tha
 
 ## For skill and agent inputs
 
-*Proposal, open: not from the article.*
+*Proposal, rewritten in v2 after eval cases 6, 7 and 11 (2026-10-19).*
 
-- Make the skill or agent own an outcome, not a task. A report-writing skill becomes one that **detects** what the report should be about and flags it early.
-- Give it its own judge: a backtest over past runs (b), or a shadow mode beside the current version (c).
-- In an agent, Altitude usually lives in the orchestrator. Put the change there, not in a leaf skill.
+The article's own example is the model for a skill: "fix individual crashes" became "keep our apps crash-free", and the work that made it possible was **access and a verification loop**: "fetch crash reports, understand which app version maps to what git commit, … so it can actually independently reproduce and verify fixes" (#22, #23).
+
+So Altitude on a skill asks one question: **what stops this skill from owning its outcome?** Typical answers, each a substitution:
+- it waits for a human to fetch its inputs → it fetches them (connector, API, export path);
+- a human checks its output → it runs its own check (a script, a re-derivation from raw data);
+- it stops at the first failure and needs a re-brief → it resumes from its own state;
+- it produces a document → it keeps a fact true (the report's numbers stay reconciled; the app stays crash-free).
+
+Not Altitude: grafting a new analysis, a new metric or a new monitor onto the skill. That makes it bigger. A new standing mechanism is a gated step (G14) unless the outcome cannot be owned without it.
+
+In an agent, Altitude lives in the orchestrator. Put the change there, not in a leaf skill.

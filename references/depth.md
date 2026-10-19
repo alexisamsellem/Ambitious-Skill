@@ -18,7 +18,7 @@
 | 4 | What, other than you or the user, would show the result is right. This is the judge (`judges.md`, G1). | #42 |
 | 5 | Rewrite the artifact to ask for exactly that. For skills and agents, the "rewrite" is the diff. | #43 |
 
-## Moves around the protocol (pick the relevant ones, G10)
+## Moves around the protocol (pick the one that matters, G10)
 
 - **Instruments, not vocabulary (#25).** "When prompted to act like a professional, models often switch vocabulary without actually switching methods." Check every Depth escalation: does it change the *method* (a database, a statistical model, a profiler, a controlled test), or only the words? A markdown table of averages is not a statistical analysis.
 - **The user doesn't need to know the tools (#26).** "You don't necessarily have to know what the experts use, Claude usually does." Name them yourself.
@@ -26,7 +26,7 @@
 - **Keep going (#28).** "Does something seem impossible to the model? Reiterate that it's very much solvable, it just needs to keep going." Write that into the rewritten artifact.
 - **Challenge what you know (#29, #30).** Get raw data and test the belief adversarially: "We believe churn is an onboarding problem. Try to reproduce that from the raw data."
 - **Produce new knowledge (#31–#33).** Once deep in the data, look for blind spots: "Build a simulation of our customers that reproduces the last year from our logs. Then find the earliest signal of churn we don't know about yet, and show it predicts on data it has not seen."
-- **Claims at the strength of the evidence (G15).** A deep method produces more claims, so it needs stricter wording. A test that fails to reject is "not shown", not "chance". A stable aggregate doesn't rule out a cause at the level below. Each claim says what was tested and what wasn't. *Proposal, from eval case 1 (2026-10-16).*
+- **Claims at the strength of the evidence (G14).** A test that fails to reject is "not shown", not "chance". A stable aggregate doesn't rule out a cause at the level below. *Proposal, from eval case 1 (2026-10-16).*
 - **Outside judge (#34, #35).** "Do not ask the model to judge itself." Ideally use "a tool the model can run to get feedback immediately". See `judges.md`.
 - **A mix, not a checklist (#37).** "I've found a mix of the following techniques useful."
 
@@ -40,10 +40,15 @@ Drop it when no checkable material and no judge can exist, even with more access
 
 ## For skill and agent inputs
 
-*Proposal, open: not from the article.*
+*Proposal, rewritten in v2 after eval cases 6, 7 and 11 (2026-10-19).*
 
-- Make it work first (G17): run the health check (`input-types.md`) and fix what it finds before any other Depth move.
+Ask the four questions about the skill's **core step**, the one step that produces its value (the title it writes, the number it reports, the verdict it gives). The answer is a rewrite of that step, not new steps around it.
 
-- Replace the skill's method with the professional's method, not just its vocabulary. If the skill says "analyse like an expert", replace that with the named method.
-- Give the skill an embedded, runnable judge: a script, a test, held-out examples, a verifier step.
-- Point its read path at raw sources instead of digested exports.
+1. What would a top professional do in this step that the skill doesn't? → the method that replaces the current one.
+2. What raw material would they start from? → the input that replaces the digested one.
+3. Which instrument would they use? → the tool that replaces prose instructions or manual checks. The skill's checklist written as prose becomes a script the skill runs.
+4. What, other than the skill or Alexis, would show the step is right? → the judge the skill runs on every run.
+
+Before any of this, the S1 look: run the skill as it is, and fix what breaks first. A fix to code or to a method is run once on an example built to break it (G14).
+
+The guardrails, gates and QA layers a skill already has are not where depth lives. Adding more of them is the usual way a skill becomes bigger without becoming better.
