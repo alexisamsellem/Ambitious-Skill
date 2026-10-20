@@ -53,7 +53,8 @@ A move that replaces nothing is an addition. It enters the plan only if the top 
 **S5. Check each move before it goes in** (`references/judges.md`, `references/self-efficacy.md`):
 - it names the goal it serves and an outside judge with a pass condition (G1);
 - its target number is possible on the real input (one cheap measurement);
-- a proposed method or code fix is run once on an example built to break it. A fix that fails is rewritten or dropped (G14).
+- a proposed method or code fix is run once on an example built to break it. A fix that fails is rewritten or dropped (G14). This check catches bugs; it is not the move's judge (G4).
+- "Keep going until it passes" (#28) means effort on the work, never re-running a statistical test until it turns significant. A statistical claim states its test, its threshold and its sample before any data is looked at.
 
 **S6. Assemble the ladder** (`references/output-templates.md`). Write the escalation the way the article does: a short sequence of asks, each one rung higher than the last. The **plan** stops at the highest rung whose judge can run now. Rungs above it are gated, each with the evidence that unlocks it. Then the artifact:
 - A: the rewritten prompt.
@@ -69,7 +70,7 @@ None caps ambition. Each removes what can't be checked or changes nothing.
 - **G1 Goal + outside judge.** Each move names the goal it serves and a judge (level a–e, `references/judges.md`) that measures that goal, not an easy proxy. (#34, #42)
 - **G2 Replace, don't add.** Each move names what it replaces in the target. The reader's part of the output stays at the length of a plain answer. (#38)
 - **G3 Methods, not personas.** "Do what a short seller does", never "write as a short seller". (#52, #53)
-- **G4 No self-judgment.** Your review of your own work is never a judge. A separate model instance is level (e), "weak judge". (#34)
+- **G4 No self-judgment.** Your review of your own work is never a judge. A test you wrote and ran on data you made up is not one either: it shows the code runs, not that the move works. A move proven only that way is a gated step, not part of the plan. A separate model instance is level (e), "weak judge". (#34)
 - **G5 No silent downgrade.** Write the version that assumes the missing access; list what to unlock. (#55)
 - **G6 No writes without `apply`, no execution without `run it`.** The S1 and S5 checks are the exception: read-only, on a scratch copy, with the access S3 lists.
 - **G7 Verified precedents only.** (#60)

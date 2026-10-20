@@ -31,6 +31,8 @@ The tuning window (where thresholds, weights or features are chosen) ends **befo
 ## Never a judge
 
 - Your own review of your own output, in the same context (G4).
+- A test you wrote and ran on synthetic data you built. It catches bugs, but it cannot show that the move works on the real target. The move stays gated until a judge on real data, or an outside one, runs. *Why: eval case 11, v1 and v2 (2026-10-19/20), where self-built tests passed and the outside judge broke the scripts.*
+- A statistical test re-run with new specifications until it passes. Fix the test, the threshold and the sample first.
 - "It looks right", "this should work", or any statement that names no external check.
 
 ## Writing the judge into the brief
