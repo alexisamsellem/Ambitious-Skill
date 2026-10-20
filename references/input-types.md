@@ -43,7 +43,7 @@ These breaks open the brief and come first in the plan and the diff. Each code f
 | Type | Artifact |
 |---|---|
 | A | The full rewritten prompt, ready to paste. Not a list of suggestions. |
-| B | A unified diff against `SKILL.md` and each reference file that changes, plus any proposed new files in full. Keep the skill's language and voice. |
+| B | A unified diff against `SKILL.md` and each reference file that changes. It holds only the fixes for the breaks S1 showed and the substitutions whose judge already ran on the real target. New scripts or methods are gated rungs on the ladder, not files in the diff. Keep the skill's language and voice. |
 | C | (1) The component map, current vs proposed. (2) A ranked change list, one row per file: what changes, which dimension, the goal served, the judge. Rank by expected impact on the top goal of the ladder. (3) Unified diffs for the top 3 changes only. |
 
 Rules that hold for every artifact:

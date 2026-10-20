@@ -51,4 +51,6 @@ Ask the four questions about the skill's **core step**, the one step that produc
 
 Before any of this, the S1 look: run the skill as it is, and fix what breaks first. A fix to code or to a method is run once on an example built to break it (G14).
 
+Answers to questions 1 to 3 that need new code or a new method go on the ladder as gated rungs, each with the real-data test that unlocks it. They enter the diff only once that test has run. *Why: eval cases 6 and 11, where the deepest proposals were the ones whose new scripts the outside judge broke.*
+
 The guardrails, gates and QA layers a skill already has are not where depth lives. Adding more of them is the usual way a skill becomes bigger without becoming better.

@@ -33,7 +33,7 @@ Purpose: <the job the artifact does>. Verbs: <verb phrase>.
 FALLBACK: if <plan> doesn't reach <target> by <timebox>, keep <rung below>, which still <serves goal>.
 ```
 
-For B and C, the breaks come first in the plan, as the first replacements.
+For B and C, the breaks come first in the plan, as the first replacements. The diff carries only those fixes and the substitutions already proven on the real target. Every new script or method is a gated rung, written as: `replace <X> with <new tool>: unlock when <test on real data> passes`.
 
 Then the artifact for the input type (`input-types.md`). For B, the diff changes the core step; a diff that grows the target by more than a fifth must name the rung that needs the extra size.
 
